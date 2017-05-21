@@ -24,10 +24,6 @@ public class OrderRequestIntakeApplication extends SpringBootServletInitializer 
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(applicationClass, args);
-//        for(String beanName : context.getBeanFactory().getBeanDefinitionNames())
-//        {
-//            System.out.println(beanName);
-//        }
         Arrays.asList(context.getBeanFactory().getBeanDefinitionNames()).forEach(System.out::println);
     }
 

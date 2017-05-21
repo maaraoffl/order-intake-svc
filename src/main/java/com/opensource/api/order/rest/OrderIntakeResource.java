@@ -17,6 +17,7 @@ public class OrderIntakeResource {
     private DispatchOrderRequestService orderRequestService;
 
     @POST
+    @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public Response takeOrder(OrderRequest orderRequest)
     {
