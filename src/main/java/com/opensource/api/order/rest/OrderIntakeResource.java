@@ -10,21 +10,21 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Component
-@Path("order")
+//@Path("order")
 public class OrderIntakeResource {
 
     @Inject
     private DispatchOrderRequestService orderRequestService;
 
-    @POST
-    @Produces(MediaType.APPLICATION_JSON)
-    @Consumes(MediaType.APPLICATION_JSON)
-    public Response takeOrder(OrderRequest orderRequest)
-    {
-        System.out.println(orderRequest.getName() + "," + orderRequest.getCount());
-        orderRequestService.sendOrderForProcessing(orderRequest);
-        return  Response.status(Response.Status.ACCEPTED).build();
-    }
+//    @POST
+//    @Produces(MediaType.APPLICATION_JSON)
+//    @Consumes(MediaType.APPLICATION_JSON)
+//    public Response takeOrder(OrderRequest orderRequest)
+//    {
+//        System.out.println(orderRequest.getName() + "," + orderRequest.getCount());
+//        orderRequestService.sendOrderForProcessing(orderRequest);
+//        return  Response.status(Response.Status.ACCEPTED).build();
+//    }
 }
 
 
