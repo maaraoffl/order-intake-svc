@@ -6,6 +6,12 @@ package com.opensource.api.order.model;
 public class OrderRequest {
     private String name;
     private String count;
+    private String id;
+
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) { this.id = id; }
 
     public String getName() {
         return name;
